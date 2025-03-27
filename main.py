@@ -17,7 +17,6 @@ class OTPTray():
         self.tray = QtWidgets.QSystemTrayIcon()
         self.tray.setContextMenu(self.menu)
         self.tray.setToolTip("OTP")
-        self.tray.setIcon(QtGui.QIcon("otp.svg"))
         self.tray.setIcon(QtGui.QIcon.fromTheme(QtGui.QIcon.ThemeIcon.Phone))
         self.tray.activated.connect(self.copyOtp)
         self.tray.show()
